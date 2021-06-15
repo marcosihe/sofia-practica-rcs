@@ -9,7 +9,7 @@ do {
 */
 
 
-
+/*
 let cadena = [];
 let i = 0;
 
@@ -20,3 +20,14 @@ do {
 
 //document.write(cadena);
 document.write(cadena.join('-'));
+*/
+
+let text = '';
+let cadena = '';
+
+do {
+    cadena = prompt("Ingrese texto");
+    text = text + cadena + '-';
+} while (confirm("Continuar?"));
+
+document.write(text);
